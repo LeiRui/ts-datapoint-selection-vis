@@ -4,10 +4,10 @@ Tweaked implementations of aggregators with the aim of more convenient Benchmark
 
 import numpy as np
 import pandas as pd
-from plotly_resampler.aggregation import AbstractSeriesAggregator
+from plotly_resampler.aggregation import AbstractAggregator
 
 
-class M4Aggregator(AbstractSeriesAggregator):
+class M4Aggregator(AbstractAggregator):
     """Aggregation method which selects the 4 M-s, i.e y-argmin, y-argmax, x-argmin, and
     x-argmax per bin.
 
